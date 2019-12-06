@@ -9,10 +9,8 @@ import os
 # Get the absolute path for the directory where this file is located "here"
 here = os.path.abspath(os.path.dirname(__file__))
 
-
 with open(os.path.join(here, "ip-ranges.json")) as file:
      json_text =  file.read()
-
      json_data = json.loads(json_text)
 
 # Loop through the ip prefixes in the JSON data and print out each
